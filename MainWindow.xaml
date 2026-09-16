@@ -7,6 +7,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Button x:Name="btn_1" Content="1" HorizontalAlignment="Left" Margin="201,141,0,0" VerticalAlignment="Top" Height="39" Width="63" Click="btn_1_Click_1"/>
+        <Button x:Name="btn_2" Content="2" HorizontalAlignment="Left" Margin="282,141,0,0" VerticalAlignment="Top" Height="39" Width="63" Click="btn_2_Click"/>
+        <Button x:Name="btn_plusz" Content="+" HorizontalAlignment="Center" Margin="0,141,0,0" VerticalAlignment="Top" Height="39" Width="64" Click="btn_plusz_Click"/>
+        <Button x:Name="btn_eredmeny" Content="=" HorizontalAlignment="Center" VerticalAlignment="Center" Height="39" Width="63" Click="btn_eredmeny_Click"/>
+        <TextBlock x:Name="txb_eredmeny" HorizontalAlignment="Left" Margin="232,70,0,0" TextWrapping="Wrap" Text="eredmény" VerticalAlignment="Top" Height="46" Width="148"/>
 
     </Grid>
 </Window>

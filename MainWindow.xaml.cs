@@ -16,9 +16,43 @@ namespace Gyakorlas
     /// </summary>
     public partial class MainWindow : Window
     {
+        int szam1 = 0;
+        int counter = 0;
+        bool plusz = false;
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void btn_1_Click_1(object sender, RoutedEventArgs e)
+        {
+            szam1 = 1;
+            
+            counter += 1;
+            
+            txb_eredmeny.Text = counter.ToString();
+        }
+
+        private void btn_2_Click(object sender, RoutedEventArgs e)
+        {
+            szam1 = 2;
+            
+            counter += 2;
+            
+            txb_eredmeny.Text = counter.ToString();
+
+
+        }
+
+        private void btn_plusz_Click(object sender, RoutedEventArgs e)
+        {
+            bool plusz = true;
+            txb_eredmeny.Text = plusz.ToString();
+        }
+
+        private void btn_eredmeny_Click(object sender, RoutedEventArgs e)
+        {
+            txb_eredmeny.Text = counter.ToString();
         }
     }
 }
